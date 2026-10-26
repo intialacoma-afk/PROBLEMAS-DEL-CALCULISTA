@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección de Problemas Matemáticos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Colección de Problemas Matemáticos</h1>
+        <p class="subtitle">Algoritmos interactivos con Formularios, DOM y JavaScript</p>
+
+        <!-- ================= EJERCICIO 12 ================= -->
+        <section>
+            <h2>Ejercicio 12: Raíces de una Ecuación Cuadrática</h2>
+            <div class="theory-box">
+                <p><b>Descripción:</b> Determina las raíces reales de una ecuación cuadrática $ax^2 + bx + c = 0$ a partir del discriminante $D = b^2 - 4ac$.</p>
+                <p><b>Algoritmo:</b> 1. Leer coeficientes. 2. Calcular discriminante $D$. 3. Evaluar condiciones ($D>0$, $D=0$, $D<0$) para calcular raíces o indicar la ausencia de solución real.</p>
+                <p><b>Entrada de datos:</b> Valores numéricos para $a$, $b$ y $c$.</p>
+                <p><b>Salida:</b> Mensaje descriptivo y valores de las raíces calculadas.</p>
+            </div>
+
+            <form id="cuadraticaForm">
+                <div class="input-group"><label>Valor de a:</label><input type="number" id="valA" step="any" required></div>
+                <div class="input-group"><label>Valor de b:</label><input type="number" id="valB" step="any" required></div>
+                <div class="input-group"><label>Valor de c:</label><input type="number" id="valC" step="any" required></div>
+                <button type="button" onclick="calcularRaices()">Calcular Raíces</button>
+            </form>
+            <div id="resultado12" class="resultado" style="display:none;"></div>
+        </section>
+
+        <!-- ================= EJERCICIO 13 ================= -->
+        <section>
+            <h2>Ejercicio 13: Estimación del valor de Pi</h2>
+            <div class="theory-box">
+                <p><b>Descripción:</b> Estima el valor de $\pi$ mediante la serie infinita iterativa $\sqrt{6 \sum_{n=1}^{N} \frac{1}{n^2}}$ utilizando un bucle.</p>
+                <p><b>Algoritmo:</b> 1. Leer límite $n$. 2. Bucle acumulador de la suma de inversos al cuadrado. 3. Multiplicar por 6 y extraer raíz cuadrada.</p>
+                <p><b>Entrada de datos:</b> Número entero $n$ (ej. 100, 10000, 1000000).</p>
+                <p><b>Salida:</b> Valor estimado, valor real de $\pi$ y la diferencia numérica.</p>
+            </div>
+
+            <form id="piForm">
+                <div class="input-group"><label>Valor de n:</label><input type="number" id="valorN" min="1" value="100" required></div>
+                <button type="button" onclick="estimarPi()">Calcular Pi</button>
+            </form>
+            <div id="resultado13" class="resultado" style="display:none;"></div>
+        </section>
+
+        <!-- ================= HOMBRE QUE CALCULABA 1 (GENERAL) ================= -->
+        <section>
+            <h2>Problema: Reparto de Camellos General (El Hombre que Calculaba)</h2>
+            <div class="theory-box">
+                <p><b>Descripción:</b> Generalización del reparto de camellos para cualquier cantidad inicial, buscando un múltiplo común que permita fracciones exactas (1/2, 1/3, 1/9).</p>
+                <p><b>Algoritmo:</b> 1. Leer el número de camellos ingresado. 2. Encontrar el siguiente múltiplo de 18 sumando los auxiliares necesarios. 3. Calcular las partes de los hermanos y el sobrante.</p>
+                <p><b>Entrada de datos:</b> Cualquier número entero de camellos.</p>
+                <p><b>Salida:</b> Total ajustado, distribución para cada hermano y ganancia del calculista.</p>
+            </div>
+
+            <form id="camellosForm">
+                <div class="input-group"><label>Camellos iniciales:</label><input type="number" id="numCamellos" value="35" min="1"></div>
+                <button type="button" onclick="resolverCamellos()">Calcular Reparto General</button>
+            </form>
+            <div id="resultadoCamellos" class="resultado" style="display:none;"></div>
+        </section>
+
+        <!-- ================= HOMBRE QUE CALCULABA 2 ================= -->
+        <section>
+            <h2>Problema: El Reparto de los Panes (El Hombre que Calculaba - Cap. 12)</h2>
+            <div class="theory-box">
+                <p><b>Descripción:</b> Dos viajeros aportan panes (5 y 3) para comer equitativamente con un forastero, quien paga 8 monedas de plata en proporción justa al alimento compartido.</p>
+                <p><b>Algoritmo:</b> 1. Calcular porciones totales y consumo por persona. 2. Hallar la aportación neta de cada viajero al forastero. 3. Distribuir las 8 monedas proporcionalmente.</p>
+                <p><b>Entrada de datos:</b> Panes del viajero 1 y panes del viajero 2.</p>
+                <p><b>Salida:</b> Monedas justas para cada uno.</p>
+            </div>
+
+            <form id="panesForm">
+                <div class="input-group"><label>Panes Viajero 1:</label><input type="number" id="panes1" value="5" min="0"></div>
+                <div class="input-group"><label>Panes Viajero 2:</label><input type="number" id="panes2" value="3" min="0"></div>
+                <button type="button" onclick="resolverPanes()">Calcular Monedas</button>
+            </form>
+            <div id="resultadoPanes" class="resultado" style="display:none;"></div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

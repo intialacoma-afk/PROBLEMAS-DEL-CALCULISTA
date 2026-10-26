@@ -1,0 +1,108 @@
+body {
+    font-family: "Georgia", serif;
+    background-color: #f7f3e9;
+    color: #3b2f2f;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fffdf9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(139, 90, 43, 0.2);
+    border: 2px solid #d4af37;
+}
+
+h1 {
+    color: #5c3a21;
+    text-align: center;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #8c6239;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+section {
+    background: #fff9ef;
+    border: 1px solid #e6d5b8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #6b4423;
+    font-size: 1.25rem;
+    margin-top: 0;
+    border-bottom: 1px dashed #d4af37;
+    padding-bottom: 5px;
+}
+
+.theory-box {
+    background-color: #fcf8ec;
+    border-left: 4px solid #b8860b;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.theory-box p {
+    margin: 5px 0;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #4a3319;
+}
+
+input[type="number"] {
+    padding: 6px;
+    width: 120px;
+    border: 1px solid #c2b292;
+    border-radius: 4px;
+    background: #fff;
+    font-family: "Georgia", serif;
+}
+
+button {
+    background-color: #8b5a2b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Georgia", serif;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #5c3a21;
+}
+
+.resultado {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f2ebd9;
+    border-left: 4px solid #8b5a2b;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
